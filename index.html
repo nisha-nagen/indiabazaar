@@ -25,16 +25,8 @@
     <link rel="stylesheet" href="./static/load.css">
     <link rel="stylesheet" href="./static/index.css">
     
-  <!--prehiding snippet for Adobe Target with asynchronous tags deployment-->
-  <script>
-  !function(e,a,n,t){var i=e.head;if(i){
-  if (a) return;
-  var o=e.createElement("style");
-  o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, "body { opacity: 0 !important }", 3000);
-</script>
-
-    
+  <script src="//assets.adobedtm.com/launch-EN8689d0d2e7d84048be077a460fec531e.min.js" async></script>
+ 
     <script>
     var digitalData = {
         "page":{
@@ -43,7 +35,15 @@
             }
     }
     </script>
-    <script src="//assets.adobedtm.com/launch-EN8689d0d2e7d84048be077a460fec531e.min.js" async></script>
+    
+  <!--prehiding snippet for Adobe Target with asynchronous tags deployment-->
+  <script>
+  !function(e,a,n,t){var i=e.head;if(i){
+  if (a) return;
+  var o=e.createElement("style");
+  o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+  (document, document.location.href.indexOf("mboxEdit") !== -1, "body { opacity: 0 !important }", 3000);
+</script>
     
 </head>
 <body>
